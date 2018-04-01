@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F180D50720710AA80045CC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180D50620710AA80045CC14 /* AppDelegate.swift */; };
+		F180D50920710AA80045CC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180D50820710AA80045CC14 /* ViewController.swift */; };
+		F180D50C20710AA80045CC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F180D50A20710AA80045CC14 /* Main.storyboard */; };
+		F180D50E20710AA80045CC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F180D50D20710AA80045CC14 /* Assets.xcassets */; };
+		F180D51120710AA80045CC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F180D50F20710AA80045CC14 /* LaunchScreen.storyboard */; };
+		F180D51920710CE10045CC14 /* MessageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F180D51820710CE10045CC14 /* MessageClassifier.mlmodel */; };
+		F180D51B20710D100045CC14 /* SMSSpamCollection.txt in Resources */ = {isa = PBXBuildFile; fileRef = F180D51A20710D100045CC14 /* SMSSpamCollection.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F180D50320710AA80045CC14 /* SpamFilteriOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamFilteriOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F180D50620710AA80045CC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F180D50820710AA80045CC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F180D50B20710AA80045CC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F180D50D20710AA80045CC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F180D51020710AA80045CC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F180D51220710AA80045CC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F180D51820710CE10045CC14 /* MessageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MessageClassifier.mlmodel; path = ../../MessageClassifier.mlmodel; sourceTree = "<group>"; };
+		F180D51A20710D100045CC14 /* SMSSpamCollection.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SMSSpamCollection.txt; path = ../../SMSSpamCollection.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F180D50020710AA80045CC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F180D4FA20710AA80045CC14 = {
+			isa = PBXGroup;
+			children = (
+				F180D50520710AA80045CC14 /* SpamFilteriOSApp */,
+				F180D50420710AA80045CC14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F180D50420710AA80045CC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F180D50320710AA80045CC14 /* SpamFilteriOSApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F180D50520710AA80045CC14 /* SpamFilteriOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				F180D50620710AA80045CC14 /* AppDelegate.swift */,
+				F180D50820710AA80045CC14 /* ViewController.swift */,
+				F180D50A20710AA80045CC14 /* Main.storyboard */,
+				F180D51820710CE10045CC14 /* MessageClassifier.mlmodel */,
+				F180D51A20710D100045CC14 /* SMSSpamCollection.txt */,
+				F180D50D20710AA80045CC14 /* Assets.xcassets */,
+				F180D50F20710AA80045CC14 /* LaunchScreen.storyboard */,
+				F180D51220710AA80045CC14 /* Info.plist */,
+			);
+			path = SpamFilteriOSApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F180D50220710AA80045CC14 /* SpamFilteriOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F180D51520710AA80045CC14 /* Build configuration list for PBXNativeTarget "SpamFilteriOSApp" */;
+			buildPhases = (
+				F180D4FF20710AA80045CC14 /* Sources */,
+				F180D50020710AA80045CC14 /* Frameworks */,
+				F180D50120710AA80045CC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpamFilteriOSApp;
+			productName = SpamFilteriOSApp;
+			productReference = F180D50320710AA80045CC14 /* SpamFilteriOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F180D4FB20710AA80045CC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Bhavin;
+				TargetAttributes = {
+					F180D50220710AA80045CC14 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F180D4FE20710AA80045CC14 /* Build configuration list for PBXProject "SpamFilteriOSApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F180D4FA20710AA80045CC14;
+			productRefGroup = F180D50420710AA80045CC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F180D50220710AA80045CC14 /* SpamFilteriOSApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F180D50120710AA80045CC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F180D51120710AA80045CC14 /* LaunchScreen.storyboard in Resources */,
+				F180D50E20710AA80045CC14 /* Assets.xcassets in Resources */,
+				F180D50C20710AA80045CC14 /* Main.storyboard in Resources */,
+				F180D51B20710D100045CC14 /* SMSSpamCollection.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F180D4FF20710AA80045CC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F180D51920710CE10045CC14 /* MessageClassifier.mlmodel in Sources */,
+				F180D50920710AA80045CC14 /* ViewController.swift in Sources */,
+				F180D50720710AA80045CC14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F180D50A20710AA80045CC14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F180D50B20710AA80045CC14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F180D50F20710AA80045CC14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F180D51020710AA80045CC14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F180D51320710AA80045CC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F180D51420710AA80045CC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F180D51620710AA80045CC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2XCNE93DB;
+				INFOPLIST_FILE = SpamFilteriOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = light.SpamFilteriOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F180D51720710AA80045CC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V2XCNE93DB;
+				INFOPLIST_FILE = SpamFilteriOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = light.SpamFilteriOSApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F180D4FE20710AA80045CC14 /* Build configuration list for PBXProject "SpamFilteriOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F180D51320710AA80045CC14 /* Debug */,
+				F180D51420710AA80045CC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F180D51520710AA80045CC14 /* Build configuration list for PBXNativeTarget "SpamFilteriOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F180D51620710AA80045CC14 /* Debug */,
+				F180D51720710AA80045CC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F180D4FB20710AA80045CC14 /* Project object */;
+}
