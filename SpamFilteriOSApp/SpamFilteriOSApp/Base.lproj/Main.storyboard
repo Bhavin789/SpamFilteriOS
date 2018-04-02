@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,22 +19,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpamFilteriOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6Yy-ii-leh">
-                                <rect key="frame" x="16" y="370" width="343" height="197"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="6Yy-ii-leh">
+                                <rect key="frame" x="16" y="320" width="288" height="148"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text Here...." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srC-hb-774">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="67"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgJ-Wl-8Uz">
-                                        <rect key="frame" x="0.0" y="123.5" width="343" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="81" width="288" height="67"/>
                                         <color key="backgroundColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
-                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="23"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Spam or Ham">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,7 +46,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36W-F8-3dG">
-                                <rect key="frame" x="87" y="149" width="200" height="68"/>
+                                <rect key="frame" x="60" y="149" width="200" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Lvv-q9-UI0"/>
                                     <constraint firstAttribute="height" constant="68" id="THw-f4-HAU"/>
@@ -60,7 +60,7 @@
                         <constraints>
                             <constraint firstItem="36W-F8-3dG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="32L-0u-i4b"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Yy-ii-leh" secondAttribute="trailing" constant="16" id="436-UN-xEb"/>
-                            <constraint firstItem="6Yy-ii-leh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="350" id="8wW-rq-RLt"/>
+                            <constraint firstItem="6Yy-ii-leh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="8wW-rq-RLt"/>
                             <constraint firstItem="36W-F8-3dG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="ARA-9Q-Hsa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Yy-ii-leh" secondAttribute="bottom" constant="100" id="HVC-6m-1VW"/>
                             <constraint firstItem="6Yy-ii-leh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dev-ck-usm"/>

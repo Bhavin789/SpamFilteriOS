@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F179CD062072377700007F62 /* words_ordered.txt in Resources */ = {isa = PBXBuildFile; fileRef = F179CD052072377600007F62 /* words_ordered.txt */; };
 		F180D50720710AA80045CC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180D50620710AA80045CC14 /* AppDelegate.swift */; };
 		F180D50920710AA80045CC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180D50820710AA80045CC14 /* ViewController.swift */; };
 		F180D50C20710AA80045CC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F180D50A20710AA80045CC14 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F179CD052072377600007F62 /* words_ordered.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = words_ordered.txt; path = ../../words_ordered.txt; sourceTree = "<group>"; };
 		F180D50320710AA80045CC14 /* SpamFilteriOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpamFilteriOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F180D50620710AA80045CC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F180D50820710AA80045CC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F180D50A20710AA80045CC14 /* Main.storyboard */,
 				F180D51820710CE10045CC14 /* MessageClassifier.mlmodel */,
 				F180D51A20710D100045CC14 /* SMSSpamCollection.txt */,
+				F179CD052072377600007F62 /* words_ordered.txt */,
 				F180D50D20710AA80045CC14 /* Assets.xcassets */,
 				F180D50F20710AA80045CC14 /* LaunchScreen.storyboard */,
 				F180D51220710AA80045CC14 /* Info.plist */,
@@ -132,6 +135,7 @@
 				F180D51120710AA80045CC14 /* LaunchScreen.storyboard in Resources */,
 				F180D50E20710AA80045CC14 /* Assets.xcassets in Resources */,
 				F180D50C20710AA80045CC14 /* Main.storyboard in Resources */,
+				F179CD062072377700007F62 /* words_ordered.txt in Resources */,
 				F180D51B20710D100045CC14 /* SMSSpamCollection.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
