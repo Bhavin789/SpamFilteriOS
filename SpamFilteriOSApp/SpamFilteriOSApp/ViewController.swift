@@ -26,7 +26,15 @@ class ViewController: MSMessagesAppViewController,UITextFieldDelegate {
     
     @IBAction func pushed(_ sender: Any){
         print("Pressed")
-        tfidf(sms: textForClassification.text!)
+        let vec = tfidf(sms: textForClassification.text!)
+        do{
+            let textPrediction = try MessageClassifier().prediction(message: vec).label
+            print(textPrediction)
+            print(try MessageClassifier().prediction(message: vec).classProbability["spam"])
+            textForClassification.text = textPrediction
+        }catch{
+            textForClassification.text = "Sorry, No prediction"
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
