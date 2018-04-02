@@ -31,9 +31,9 @@ class ViewController: MSMessagesAppViewController,UITextFieldDelegate {
             let textPrediction = try MessageClassifier().prediction(message: vec).label
             print(textPrediction)
             print(try MessageClassifier().prediction(message: vec).classProbability["spam"])
-            textForClassification.text = textPrediction
+            classifiedLabel.text = textPrediction
         }catch{
-            textForClassification.text = "Sorry, No prediction"
+            classifiedLabel.text = "Sorry, No prediction"
         }
     }
     
