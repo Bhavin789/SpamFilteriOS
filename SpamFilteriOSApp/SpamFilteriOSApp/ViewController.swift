@@ -38,6 +38,28 @@ class ViewController: MSMessagesAppViewController,UITextFieldDelegate {
         return true
     }
     
+    @objc func handleKeyboardNotification(notification: NSNotification){
+        print("Working***********************")
+        if (textForClassification.isFirstResponder && (view.frame.origin.y == 0)) {
+            if let userInfo = notification.userInfo{
+                if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+                    print(keyboardSize.height)
+                    view.frame.origin.y-=100
+                }
+            }
+        }
+    }
+    
+    @objc func handleKeyboardNotificationForHide(notification: NSNotification){
+        print("hiding*******************")
+        if let userInfo = notification.userInfo{
+            if let keyboardSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue{
+                print(keyboardSize)
+                view.frame.origin.y = 0
+            }
+        }
+    }
+    
     func tfidf(sms: String) -> MLMultiArray{
         let wordsFile = Bundle.main.path(forResource: "words_ordered", ofType: "txt")
         let smsFile = Bundle.main.path(forResource: "SMSSpamCollection", ofType: "txt")
